@@ -57,17 +57,33 @@ h1{
   /*  padding-left: 50px;*/
 }
 h2{
-  font-size: 3.5em;
+  font-size: 3.2em;
   color: white;
 }
 .hm{
   font-size: 0.5em;
 }
-.mm{
-  font-size: 1.2em;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-style: normal;
+.cover-list{ 
+  height:136px;
+  overflow:hidden;
+  margin-top:16px;
+}
+.cover-list li{
+ height:24px;
+ vertical-align:top;
+ overflow:hidden;
+ margin-top:10px;
+}
+.cover-list-text{ 
+  width:62px;
+  height:21px; 
+  line-height:19px;
+  *line-height:17px; 
+  text-align:center; 
+  font-size:15px;
+  color:#009999; 
+  background:#003333; 
+  border-radius:4px;
 }
 .im{
   position: relative;
