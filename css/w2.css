@@ -1,0 +1,71 @@
+body{
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#all{
+  width: 980px;
+  margin: 0 auto;
+  color: white;
+}
+#top{
+  width:100%;
+  height:65px;
+  left:0;
+  top:0;
+  background: linear-gradient(#000,#C0C0C0) repeat-x;
+  background-size: 10px 65px;
+}
+#top ul{
+  width: 960px;
+  height: 65px;
+  margin: 0 auto;
+}
+#top ul li{
+  float: left;
+  list-style:none;
+  line-height:65px;
+  padding: 0 10px;
+}
+#top ul li a{
+  text-decoration: none;
+  color: #00BFFF;
+  font-size: 30px;
+}
+#top ul li:hover{
+  background-color: #ff2a32;
+  height: 65px;
+}
+body,.top{
+  padding:0; margin:0;
+}
+h1{
+  color: white;
+  font-size:2.5em;
+  padding-left: 340px;
+}
+.jcImgScroll{
+  position:relative;
+  height:380px;
+  margin:40px auto 0 auto;
+}
+.jcImgScroll li{
+  border:1px solid #ccc;
+}
+.jcImgScroll li img,.jcImgScroll li,.jcImgScroll em,.jcImgScroll dl{
+  display:none;
+  border:0 none;
+}
+.jcImgScroll li img{
+  width: 100%;
+  height: 100%;
+}
+.jcImgScroll em.sPrev{
+  background:url(../images/arrow-left.png) no-repeat left center;
+}
+.jcImgScroll em.sNext{
+  background:url(../images/arrow-right.png) no-repeat right center;
+}
+.jcImgScroll dl dd:hover,.jcImgScroll dl dd.curr{
+  background-position:0 0;
+}                 

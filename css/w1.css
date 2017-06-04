@@ -1,0 +1,94 @@
+#top-image {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+    ), url('../images/001.jpg') no-repeat fixed;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100%;
+}
+#all{
+  width: 980px;
+  margin: 0 auto;
+  color: white;
+}
+#top{
+  width:100%;
+  height:65px;
+  left:0;
+  top:0;
+  background: linear-gradient(#000,#C0C0C0) repeat-x;
+  background-size: 10px 65px;
+}
+#top ul{
+  width: 960px;
+  height: 65px;
+  margin: 0 auto;
+}
+#top ul li{
+  float: left;
+  list-style:none;
+  line-height:65px;
+  padding: 0 10px;
+}
+#top ul li a{
+  text-decoration: none;
+  color: #00BFFF;
+  font-size: 30px;
+}
+#top ul li:hover{
+  background-color: #ff2a32;
+  height: 65px;
+}
+body,.top{
+  padding:0; margin:0;
+}
+#all{
+  width: 980px;
+  margin: 0 auto;
+  color: white;
+}
+b{
+  font-size: 2.3em;
+  color: white;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Microsoft YaHei","Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}

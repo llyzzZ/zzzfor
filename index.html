@@ -1,104 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>个人简介</title>
-    <link href="mycss.css" type="text/css" rel="stylesheet">
-    <link href="960.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>杭电王者——首页</title>
+  <style type="text/css">
+    <!--
+    .topDiv {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #00FFFF;
+      background-color: #FFFFFF;
+      border: 8px solid #00BFFF;
+      position:absolute;
+      z-index:9999;
+      display:none;
+      width: 300px;
+      height: 270px;
+      margin-top:13%;
+      margin-left:23%;
+      padding:10px;
+    }
+  -->
+</style>
+<script type="text/javascript">
+  function showDiv(){
+   var winWidth;
+   var winHeight;
+   if (document.body && document.body.clientHeight && document.body.clientWidth)
+   {
+    winHeight = document.body.clientHeight;
+    winWidth = document.body.clientWidth;
+  }
+  document.getElementById('show').style.display="block";
+  document.getElementById('show_win').style.display="block";
+  document.getElementById('show').style.width=winWidth+"px";
+  document.getElementById('show').style.height=winHeight+"px";
+}
+</script>
+<link rel="stylesheet" href="./css/w1.css">
+<script src='./js/jquery-1.11.0.min.js'></script>
+<script src='./js/ios-parallax.js'></script>
 </head>
 <body>
+  <div id="top-image">
     <div id="top">
-        <ul>
-            <li><a href="#basic">基本信息</a></li>
-            <li><a href="#introduce">自我介绍</a> </li>
-            <li><a href="#interest">兴趣爱好</a> </li>
-            <li><a href="#education">求学经历</a>
-                <li><a href="#feature">未来目标</a> </li>
-            </ul>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="w2.html">英雄列表</a> </li>
+        <li><a href="w3.html">英雄介绍</a> </li>
+        <li><a href="w4.html">玩家介绍</a></li>
+      </ul>
+    </div>
+    <div id="all">
+      <br>
+      <div style="z-index: 8888;position: absolute;-moz-opacity:0.50;opacity:0.3;filter:alpha(opacity=30);background-color: #000;display:none;" id="show">
+      </div>
+      <div class="topDiv" id="show_win"><a href="#">
+        <div class="your-class" style="width:100%;text-align:center">
+          <div class="form">
+            <form class="register-form">
+              <input type="text" placeholder="用户名" id="r_user_name"/>
+              <input type="password" placeholder="密码" id="r_password" />
+              <button id="enter">登录</button>
+            </form>
+          </div>
         </div>
-        <div id="page">
-            <h1 align="center">个人简介</h1>
-            <div class="container_12">
-                <section id="basic" class="grid_6">
-                    <h2>基本信息：</h2>
-                    <table border="0">
-                        <tr align="left">
-                            <td>姓名：</td>
-                            <td>张力元</td>
-                        </tr>
-                        <tr align="left">
-                            <td>学号：</td>
-                            <td>16058428</td>
-                        </tr>
-                        <tr align="left">
-                            <td>出生年月：</td>
-                            <td><time pubdate="pubdate">1997/02/04</time></td>
-                        </tr>
-                        <tr align="left">
-                            <td>政治面貌：</td>
-                            <td>团员</td>
-                        </tr>
-                    </table>
-                </section>
-                <section id="relation" class="grid_6">
-                    <h2>联系方式：</h2>
-                    <table>
-                        <tr>
-                            <td>QQ：</td>
-                            <td>875724700</td>
-                        </tr>
-                        <tr>
-                            <td>微信：</td>
-                            <td>15081538923</td>
-                        </tr>
-                        <tr>
-                            <td>个人邮箱：</td>
-                            <td>875724700@qq.com</td>
-                        </tr>
-                        <tr>
-                            <td>手机号：</td>
-                            <td>18768112023</td>
-                        </tr>
-                    </table>
-                </section>
-            </div>
-            <section id="introduce">
-                <h2>自我介绍：</h2>
-                <img src="bq.jpg">
-                <p  class="clearfix">我来自河北唐山，现在就读于杭州电子科技大学，是16级计算机学院软件工程四班的学生，加入了计算机学院团委宣传部，同时在辅导员办公室兼职导员助理。</p>
-            </section>
-            <section id="interest">
-                <h2>兴趣爱好：</h2>
-                <p>喜欢自己一个人的时候听听歌，看看电影，喜欢看搞笑剧。喜欢篮球这项运动，但是不太会打。最大的爱好就是吃啦，基本不挑食，除了臭豆腐什么的基本都会吃。喜欢吃各种水果（除了榴莲）。</p>
-            </section>
-            <section id="education">
-                <h2>求学经历:</h2>
-                <table border="0">
-                    <tr align="left">
-                        <td>2004-2010</td>
-                        <td>北杨庄小学</td>
-                    </tr>
-                    <tr align="left">
-                        <td>2010-2013</td>
-                        <td>玉田县虹桥镇中学</td>
-                    </tr>
-                    <tr align="left">
-                        <td>2013-2016</td>
-                        <td>玉田一中</td>
-                    </tr>
-                </table>
-            </section>
-            <section id="feature">
-                <h2>未来目标:</h2>
-                <ul>
-                    <li><span class="icon-mail">升职加薪</span></li>
-                    <li>当上总经理</li>
-                    <li>出任CEO</li>
-                    <li>走向人生巅峰！</li>
-                </ul>
-            </section>
-            
-            <a href="diaochawenjuan.html">点击进入调查问卷</a>
-        </div>
-    </body>
-    </html>
+      </a>
+    </div>
+    <a href="javascript:void(0);" onclick="javascript:showDiv();"><b>登录</b></a>
+    <p align="center">
+     <embed wmode="opaque" flashvars="vid=t0508ps90h9&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;shownext=1&amp;list=2&amp;autoplay=1&amp;share=0&amp;follow=0&amp;searchbar=0&amp;searchpanel=0&amp;clientbar=0&amp;bullet=1" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1496488223438" id="tenvideo_flash_player_1496488223438" bgcolor="#000000" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/" width="750px" align="middle" height="404px">
+     </p>
+   </div>
+ </div>
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $('#top-image').iosParallax({
+      movementFactor: 50
+    });
+  });
+</script>
+</body>
+</html>
